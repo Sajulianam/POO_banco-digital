@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Banco Digital</h1>
+    </header>
+
+    <main>
+        <section class="login">
+            <h2>Autenticação</h2>
+            <form id="loginForm">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section class="conta">
+            <h2>Minha Conta</h2>
+            <div class="saldo">
+                <h3>Saldo:</h3>
+                <span id="saldoConta">R$ 0,00</span>
+            </div>
+
+            <div class="acoes">
+                <button id="btnSacar">Sacar</button>
+                <button id="btnDepositar">Depositar</button>
+                <button id="btnTransferir">Transferir</button>
+                <button id="btnExtrato">Extrato</button>
+            </div>
+
+            <div class="transacoes">
+                <h2>Histórico de Transações</h2>
+                <table id="tabelaTransacoes">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Descrição</th>
+                            <th>Valor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
